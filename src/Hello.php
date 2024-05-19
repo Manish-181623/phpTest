@@ -9,6 +9,9 @@
 
 namespace Silarhi;
 
+// Include the interface
+require_once 'HelloInterface.php';
+
 class Hello implements HelloInterface
 {
     private const VERSION = 'latest';
@@ -18,3 +21,7 @@ class Hello implements HelloInterface
         return sprintf('Hello World v%s', self::VERSION);
     }
 }
+
+// // Instantiate the Hello class and display the output
+$hello = new Hello();
+echo $hello->display();

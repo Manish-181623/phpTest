@@ -1,0 +1,6 @@
+services:
+  php:
+    image: my_hello:latest 
+    container_name: hello_cont
+    ports:
+      - 8000:80
